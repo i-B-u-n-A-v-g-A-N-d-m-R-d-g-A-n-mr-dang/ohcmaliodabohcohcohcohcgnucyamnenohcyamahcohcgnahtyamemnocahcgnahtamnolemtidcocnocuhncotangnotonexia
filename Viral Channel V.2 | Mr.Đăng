@@ -20,9 +20,7 @@ $key = explode("</b>",explode("<b>",curl_exec($ch))[1])[0];
 echo "\033[1;33mLink Pass => mr-dang.xyz/termux/key.php\n\n";
 echo "\033[1;34m[+] Enter KEY \033[1;31m:\033[1;33m ";
 $pas = trim(fgets(STDIN));
-if ($pas==$key){}else{echo "\033[1;31merror key => re check";exit();}
-
-
+if ($pas==$key){}else{echo "\033[1;31merror key => re check"; exit();}
 include "data.dagtricks.php";
 
 @system("clear");
