@@ -1,9 +1,9 @@
 echo "device : ";
 $de = trim(fgets(STDIN));
 echo "customer : ";
-$re = trim(fgets(STDIN));
-echo "requestkey : ";
 $cus = trim(fgets(STDIN));
+echo "requestkey : ";
+$re = trim(fgets(STDIN));
 
 $ch= curl_init();
 
