@@ -1,7 +1,7 @@
 $ch = curl_init();
-echo "email";
+echo "email   ";
 $email = trim(fgets(STDIN));
-echo "password";
+echo "password    ";
 $pass = trim(fgets(STDIN));
 $l = "https://giftapp-prod.askchuck.co/wp-json/gifts/v1/login";
 $d = '{"email":"'.$email.'","password":"'.$pass.'"}';
