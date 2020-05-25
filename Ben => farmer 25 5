@@ -10,7 +10,7 @@ $cus = trim(fgets(STDIN));
 
 $key_spin = "10";
 
-function view_ads(){
+function view_ads($de,$re,$cus){
 $ch = curl_init();
 
 curl_setopt($ch, CURLOPT_URL, "https://giftapp-prod.askchuck.co/wp-json/gifts/v1/events/ad_revenue?ad_rev=1&ad_failed=0");
@@ -79,7 +79,7 @@ $ads = $result["data"]["is_need_to_show_ad"];
 echo "~[sesult//coins] => {[ $user_coins ]} | => Success\n";
 
 if ($ads == true){
-view_ads();
+view_ads($de,$re,$cus);
 }else{}
 
 
@@ -121,7 +121,7 @@ $ads2 = $result2["data"]["is_need_to_show_ad"];
 echo "~[sesult//coins] => {[ $user_coins2 ]} | => Success\n";
 
 if ($ads2 == true){
-view_ads();
+view_ads($de,$re,$cus);
 }else{}
 
 
@@ -159,7 +159,7 @@ $ads3 = $result3["data"]["is_need_to_show_ad"];
 echo "~[sesult//coins] => {[ $user_coins3 ]} | => Success\n";
 
 if ($ads3 == true){
-view_ads();
+view_ads($de,$re,$cus);
 }else{}
 
 
