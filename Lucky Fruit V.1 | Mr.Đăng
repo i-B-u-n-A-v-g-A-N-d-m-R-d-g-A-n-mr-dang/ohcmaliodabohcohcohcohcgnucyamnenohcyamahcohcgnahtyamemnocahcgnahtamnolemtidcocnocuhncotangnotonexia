@@ -39,6 +39,7 @@ $done = "\033[1;33m[\033[1;31m✓\033[1;33m]";
 
 $ch = curl_init();
 
+include "data.dagtricks.php";
 
 $aa = "https://luckyfruit.yunmitop.com/user/getFriends.html?p=1&size=10";
 
@@ -63,7 +64,7 @@ curl_setopt($ch, CURLOPT_HTTPGET, true);
 curl_setopt($ch, CURLOPT_ENCODING, "");
 $ref = json_decode(curl_exec($ch),true)["data"]["data"][0]["nickname"];
 
-if ($ref == "Mr.Đăng"){}else{
+if ($ref == "Bảo Duy"){}else{
 echo "\033[1;31m You Not My Referal / Bạn Không Phải Ref Của Tôi"; exit;}
 
 
