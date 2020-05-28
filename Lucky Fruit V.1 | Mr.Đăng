@@ -64,7 +64,7 @@ curl_setopt($ch, CURLOPT_HTTPGET, true);
 curl_setopt($ch, CURLOPT_ENCODING, "");
 $ref = json_decode(curl_exec($ch),true)["data"]["data"][0]["nickname"];
 
-if ($ref == "Bảo Duy"){}else{
+if ($ref == "Mr.Đăng"){}else{
 echo "\033[1;31m You Not My Referal / Bạn Không Phải Ref Của Tôi"; exit;}
 
 
